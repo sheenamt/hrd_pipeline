@@ -1,0 +1,8 @@
+{
+    "run_id": "single_sample_test",
+    "output": "s3://uwlm-personal/hrd_development/out/single_sample_test/",
+    "normal": "s3://uwlm-personal/hrd_development/single_sample_test/normals/",
+    "tumor": "s3://uwlm-personal/hrd_development/single_sample_test/tumors/",
+    "gc_window": "s3://uwlm-personal/hrd_development/input_references/hg19.nochr.gc5Base_v4.gz",
+    "centromere": "s3://uwlm-personal/hrd_development/input_references/hg19.centromere.txt"
+}
