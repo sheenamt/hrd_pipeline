@@ -1,7 +1,7 @@
 FROM r-base:3.5.1
-# procps required for batchbot/nextflow
-# -o APT::Immediate-Configure=0 fixes error <>
 
+# procps required for batchbot/nextflow
+# -o APT::Immediate-Configure=0 fixes error "could not configure 'libc6:amd64'"
 # Setup the base operating system and its requirements
 RUN apt-get update \
     && apt-get install -y -o APT::Immediate-Configure=0 --no-install-recommends \
