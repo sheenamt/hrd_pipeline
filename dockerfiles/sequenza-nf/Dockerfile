@@ -22,8 +22,6 @@ RUN wget https://files.pythonhosted.org/packages/86/b7/5343a87e787affca67fa02097
     && cd ../ && rm -rf *sequenza-utils*
 
 # Setup the code for sequenza 
-ADD exec/install_sequenza.R /usr/local/install_sequenza.R
-RUN Rscript /usr/local/install_sequenza.R \
-    && rm /usr/local/install_sequenza.R
+RUN R -e "install.packages('sequenza',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 
 CMD ["/bin/bash"]
