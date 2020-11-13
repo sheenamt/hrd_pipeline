@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: sheenamt/sequenza:v0.1
+          tags: sheenamt/sequenza:v3.0
           file: dockerfiles/sequenza-nf/Dockerfile
       -
         name: Image digest
